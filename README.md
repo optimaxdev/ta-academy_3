@@ -78,7 +78,7 @@ git checkout -b homework_1
 ```
 Add your changes
 
-Then commit and push your changes to your local branch (not master!)
+Then commit and push your changes to your local branch (not `main`!)
 
 ``` 
 git status
@@ -96,11 +96,11 @@ Change base repository to yours (not optimax_dev!), add reviewers at the right s
 ![master.png](images%2Fmaster.png)
 
 
-After reviewers approve and merge your pull request, to update your local master make following commands:
+After reviewers approve and merge your pull request, to update your local `main` make following commands:
 
 ``` 
-git checkout master
-git pull origin master
+git checkout main
+git pull origin main
 ``` 
 
 #### Synchronize repositories
@@ -108,13 +108,13 @@ _______
 To get updates from remote repository to yours:
 
 ```
-git checkout master
-git pull academy master
+git checkout main
+git pull academy main
 ``` 
 Enter commit message
 
 ![merge-message.png](images%2Fmerge-message.png)
 
 ``` 
-git push origin master
+git push origin main
 ``` 
