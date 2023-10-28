@@ -4,8 +4,12 @@
 // 3. Импортировать константу personNames в App.tsx
 // 4. Вывести значение константы в тег <p>, по аналогии с уже имеющимися примерами;
 
+
 type PersonType = {
-    occupation?: string;
+    name: string;
+    age:number;
+    occupation:string;
+    isSuperHero?: boolean; 
 };
 
 export const users: PersonType[] = [
@@ -21,7 +25,7 @@ export const users: PersonType[] = [
     },
     {
         name: 'Batman',
-        age: 'unknown',
+        age: 55,
         isSuperHero: true,
         occupation: 'vigilante',
     },
