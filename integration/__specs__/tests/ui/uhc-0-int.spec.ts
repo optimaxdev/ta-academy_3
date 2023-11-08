@@ -1,6 +1,7 @@
-import { Mock } from '@Core/mock';
-import { CartPage } from '@Components/cartPage/cartPage';
-import { GetCartItemsMock } from '@Mocks/api/mockio/v2/id/get';
+import { CartPage } from "@Components/cartPage/cartPage";
+import { Mock } from "@Core/mock";
+import { GetCartItemsMock } from "@Mocks/api/mockio/v2/id/get";
+
 
 describe('UHC-0-int', () => {
     const mock = Mock.getInstance();
@@ -22,5 +23,10 @@ describe('UHC-0-int', () => {
         reporter.startStep('This is test step reporter');
             expect(title).toStrictEqual('Shopping cart');
         reporter.endStep();
+
+
+        
     });
 });
+
+
