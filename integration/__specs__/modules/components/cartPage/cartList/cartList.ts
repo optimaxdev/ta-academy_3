@@ -10,5 +10,6 @@ export class CartList extends Component {
         const cartItemsElements = await this.element.waitForQuerySelector(this.selectors.cartItems);
         const cartItems = cartItemsElements.map(item => new CartItem(item));
         return cartItems;
-    }
+    };
+
 }

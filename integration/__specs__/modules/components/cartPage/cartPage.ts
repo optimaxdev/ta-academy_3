@@ -13,24 +13,33 @@ export class CartPage extends Container {
 
     public async fulfill(): Promise<void> {
         await super.fulfill();
-    }
+    };
 
     public async getHeaderTitle(): Promise<string> {
         const [title] = await document.waitForQuerySelector(this.selectors.title);
         return title.textContent;
-    }
+    };
 
     public async getCartList(): Promise<CartList> {
         const [cartListElement] = await document.waitForXpath(this.selectors.cartList);
         return new CartList(cartListElement);
-    }
+    };
 
     public async OpenModalAddItem(): Promise<ModalAddItem> {
         const [button] = await document.waitForXpath(this.selectors.buttonAddCartItem);
         fireEvent.click(button);
 
         const [modal] = await document.waitForXpath(this.selectors.modalAddItem);
-
         return new ModalAddItem(modal);
-    }
+    };
+
+    public async checkModalElement(): Promise<boolean> {
+        return await document
+            .waitForXpath(this.selectors.modalAddItem)
+            .then(() => true)
+            .catch(() => false);
+    };
 }
+
+
+
