@@ -24,4 +24,6 @@ export class ModalAddItem extends Component {
         const [buttonCreate] = await this.element.waitForXpath(this.selectors.buttonCreate);
         fireEvent.click(buttonCreate);
     };
+
+    
 }

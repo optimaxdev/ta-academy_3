@@ -48,7 +48,7 @@ describe('UHC-1-int', () => {
         expect(title).toStrictEqual('Shopping cart');
         reporter.endStep();
      
-    
+        
     });
 });
 

@@ -1,4 +1,5 @@
 import { Component } from '@Core/component';
+import { ShorthandPropertyAssignment } from 'typescript';
 
 export class CartItem extends Component {
     protected selectors = {
@@ -43,4 +44,6 @@ export class CartItem extends Component {
     public async deleteItem(): Promise<void> {
         await this.element.clickByXpath(this.selectors.deleteItemButton);
     };
+
+    
 }
