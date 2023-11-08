@@ -34,7 +34,7 @@ export class CartItem extends Component {
     public async getPriceNewItem(): Promise<number> {
         const priceForall = await this.getPriceForAll();
         const quantity = await this.getInputQuantity();
-        return priceForall / quantity;
+        return priceForall/quantity;
     };
 
     public async addOne(): Promise<void> {

@@ -47,11 +47,10 @@ describe('UHC-1-int', () => {
         const title = await cartPage.getHeaderTitle();
         expect(title).toStrictEqual('Shopping cart');
         reporter.endStep();
-     
         
     });
 });
-
+ 
 
 
 

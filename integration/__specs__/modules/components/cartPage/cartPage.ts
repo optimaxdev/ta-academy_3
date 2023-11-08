@@ -2,7 +2,7 @@ import { fireEvent } from '@testing-library/react';
 import { Container } from '@Core/container';
 import { CartList } from '@Components/cartPage/cartList/cartList';
 import { ModalAddItem } from '@Components/cartPage/ModalAddItem/ModalAddItem';
-import prettyFormat from 'pretty-format';
+
 
 export class CartPage extends Container {
     private selectors = {
